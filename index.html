@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assembly Code Processor</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Assembly Code Processor</h1>
+
+        <div class="upload-section">
+            <input type="file" id="file1" accept=".txt">
+            <button id="btn1">Upload src</button>
+        </div>
+
+        <textarea id="pass1" placeholder="Assembly Code..."></textarea>
+        <button id="clrsrc">Clear Source</button>
+        <button id="btnsave1">Save Source</button>
+
+        <div class="upload-section">
+            <input type="file" id="file2" accept=".txt">
+            <button id="btn2">Upload OPTAB</button>
+        </div>
+
+        <textarea id="op" placeholder="OPTAB..."></textarea>
+        <button id="clrop">Clear OPTAB</button>
+        <button id="btnsave2">Save OPTAB</button>
+
+        <button id="btnp1">Pass 1</button>
+        <button id="btnp2">Pass 2</button>
+
+        <div class="output-section">
+            <h2>Intermediate Output</h2>
+            <textarea id="output1" placeholder="Intermediate Output..." readonly></textarea>
+            <button id="clrout1">Clear Intermediate Output</button>
+            <button id="btnsave3">Save Intermediate Output</button>
+        </div>
+
+        <div class="output-section">
+            <h2>SYMTAB</h2>
+            <textarea id="symtab" placeholder="Symbol Table..." readonly></textarea>
+            <button id="clrsym">Clear SYMTAB</button>
+            <button id="btnsave4">Save SYMTAB</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Pass 2 Output</h2>
+            <textarea id="output2" placeholder="Pass 2 Output..." readonly></textarea>
+            <button id="clrout2">Clear Pass 2 Output</button>
+            <button id="btnsave5">Save Pass 2 Output</button>
+        </div>
+
+        <div class="bndry bndry2" style="display: none;">
+            <p>Pass 1 processing complete.</p>
+        </div>
+        <div class="bndry bndry3" style="display: none;">
+            <p>Pass 2 processing complete.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
